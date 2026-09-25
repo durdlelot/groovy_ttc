@@ -1604,6 +1604,42 @@ local dlc_27_units = {
     {"wh3_dlc27_sla_mon_preyton_ror", "rare", 2},
     {"wh3_dlc27_sla_veh_exalted_seeker_chariot_dechala", "rare", 2},
     {"wh3_dlc27_sla_mon_keeper_of_secrets_dechala", "rare", 3},
+
+    -- remaining RoRs
+    {"wh3_dlc27_hef_veh_skycutter_ror", "rare", 1},
+    {"wh3_dlc27_woc_mon_chimera_ror", "rare", 2},
+
+    -- monstrous arcanum variants, same caps as their base units
+    {"wh3_dlc27_bst_inf_cygor_monst_arcanum_reward", "rare", 3},
+    {"wh3_dlc27_bst_mon_ghorgon_monst_arcanum", "rare", 3},
+    {"wh3_dlc27_bst_mon_ghorgon_monst_arcanum_reward", "rare", 3},
+    {"wh3_dlc27_bst_mon_jabberslythe_monst_arcanum", "rare", 3},
+    {"wh3_dlc27_bst_mon_jabberslythe_monst_arcanum_reward", "rare", 3},
+    {"wh3_dlc27_chd_mon_bale_taurus_monst_arcanum", "rare", 2},
+    {"wh3_dlc27_chd_mon_lammasu_monst_arcanum", "rare", 2},
+    {"wh3_dlc27_chs_feral_manticore_monst_arcanum", "special", 2},
+    {"wh3_dlc27_chs_feral_manticore_monst_arcanum_reward", "special", 2},
+    {"wh3_dlc27_chs_mon_dragon_ogre_shaggoth_monst_arcanum_reward", "rare", 3},
+    {"wh3_dlc27_cth_mon_celestial_lion_monst_arcanum", "rare", 2},
+    {"wh3_dlc27_def_mon_black_dragon_monst_arcanum", "rare", 3},
+    {"wh3_dlc27_lzd_mon_dread_saurian_monst_arcanum", "rare", 3},
+    {"wh3_dlc27_nor_mon_chimera_monst_arcanum", "rare", 2},
+    {"wh3_dlc27_nor_mon_chimera_monst_arcanum_reward", "rare", 2},
+    {"wh3_dlc27_nur_mon_toad_dragon_monst_arcanum", "rare", 3},
+    {"wh3_dlc27_nur_mon_toad_dragon_monst_arcanum_reward", "rare", 3},
+    {"wh3_dlc27_ogr_mon_thundertusk_monst_arcanum", "rare", 3},
+    {"wh3_dlc27_sla_mon_preyton_monst_arcanum", "rare", 2},
+    {"wh3_dlc27_sla_mon_preyton_monst_arcanum_reward", "rare", 2},
+    {"wh3_dlc27_tmb_mon_carrion_monst_arcanum", "special", 1},
+    {"wh3_dlc27_tze_mon_cockatrice_monst_arcanum", "rare", 2},
+    {"wh3_dlc27_tze_mon_cockatrice_monst_arcanum_reward", "rare", 2},
+}
+
+local bhashiva_units = {
+    -- cathay (wh3_cp1)
+    {"wh3_cp1_cth_inf_iron_claw_guandao", "special", 2},
+    {"wh3_cp1_cth_inf_stalkers_throwing_disc", "special", 2},
+    {"wh3_cp1_cth_inf_tiger_warriors_dual_axe", "core"},
 }
 
 local dlc_29_units = {
@@ -1666,6 +1702,9 @@ local dlc_29_units = {
     {"wh3_dlc29_bst_mon_giant_spined_chaos_beast", "rare", 2},
     {"wh3_dlc29_bst_mon_giant_spined_chaos_beast_ror", "rare", 2},
 
+    -- chaos dwarfs (same Siege Giant as chaos above)
+    {"wh3_dlc29_chd_mon_chaos_siege_giant", "rare", 1},
+
     -- empire (Boris Todbringer / Cult of Ulric roster)
     {"wh3_dlc29_emp_inf_teutogen_guard", "special", 2},
     {"wh3_dlc29_emp_inf_teutogen_guard_ror", "special", 2},
@@ -1695,6 +1734,18 @@ local errata = {
     {"wh2_main_lzd_cav_terradon_riders_0_blessed", "special", 1},
     {"wh2_main_lzd_inf_skink_cohort_1_blessed", "core"},
     {"wh2_main_lzd_mon_ancient_stegadon_blessed", "rare", 3},
+    {"wh2_dlc09_tmb_inf_cairn_wraiths", "rare", 1},
+    {"wh2_dlc09_tmb_inf_spirit_host", "special", 3},
+    {"wh2_dlc09_tmb_mon_crypt_horrors", "special", 2},
+    {"wh2_dlc09_tmb_mon_morghast_archai", "special", 2},
+    {"wh2_dlc09_tmb_mon_morghast_harbingers", "special", 2},
+    {"wh2_dlc11_cst_cav_knights_errant_1", "core"},
+    {"wh2_dlc11_cst_cav_knights_errant_2", "core"},
+    {"wh2_dlc12_lzd_cav_terradon_riders_0_tlaqua", "special", 1},
+    {"wh2_dlc12_lzd_cav_terradon_riders_1_tlaqua", "special", 1},
+    {"wh2_dlc15_hef_mon_forest_dragon_0", "rare", 3},
+    {"wh2_dlc17_emp_inf_prisoners_0", "core"},
+    {"wh3_main_nur_inf_forsaken_0_warriors", "core"},
 }
 
 
@@ -1722,6 +1773,7 @@ ttc.add_setup_callback(function()
     ttc.add_unit_list(dlc_25_units, true)
     ttc.add_unit_list(dlc_26_units, true)
     ttc.add_unit_list(dlc_27_units, true)
+    ttc.add_unit_list(bhashiva_units, true)
     ttc.add_unit_list(dlc_29_units, true)
     ttc.add_unit_list(errata, true)
 

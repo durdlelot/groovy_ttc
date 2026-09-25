@@ -47,13 +47,19 @@ campaigns only. Custom Battle is never capped.
 
 ## Version history
 
-### 1.1.0 — Lord of the End Times support
+### 1.1.0 — Lord of the End Times support, missing units sweep
 - Added unit caps for the ~60 new recruitable units introduced by the *Lord of
   the End Times* DLC (`wh3_dlc29`) across Vampire Counts, Tomb Kings, Skaven,
-  Warriors of Chaos, Beastmen, and Empire.
+  Warriors of Chaos, Chaos Dwarfs, Beastmen, and Empire.
 - Registered the new `Host of Nagash` (Undead Legions) subculture, with a
   default AI replacement-unit list drawn from the Vampire Counts/Tomb
   Kings/Skaven pools it recruits from.
+- Added Bhashiva's Cathay units (`wh3_cp1`).
+- Added DLC27 units that were missing, mainly the Monstrous Arcanum variants,
+  using the same caps as their base units.
+- Added older units that were missing (legacy Tomb Kings undead, Tlaqua
+  Terradons, Forest Dragon, and others). Every recruitable unit in the game now
+  has a cap entry, except prologue, quest-battle, and multiplayer-only units.
 
 ### 1.0.0 — Baseline
 - Existing caps coverage for WH1/WH2/WH3 vanilla units through DLC27, plus
