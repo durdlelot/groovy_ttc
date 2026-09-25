@@ -22,17 +22,28 @@ unlimited-recruitment model.
 
 ## Requirements
 
-- [Mod Configuration Tool (MCT)](https://steamcommunity.com/sharedfiles/filedetails/?id=2857203103)
+None. Mod Configuration Tool (MCT) is optional. If it's installed, it adds
+settings for the Special/Rare point budgets and the AI toggle.
 
-## Installation / Development
+## Building the pack
 
-This repository is laid out as an [RPFM](https://github.com/Frodo45127/rpfm)
-project (loose `db`/`script`/`text`/`ui` source rather than a compiled `.pack`).
-To test changes in-game:
+This repository is an [RPFM](https://github.com/Frodo45127/rpfm) MyMod project:
+loose `db`/`script`/`text`/`ui` source instead of a compiled `.pack`. The
+`db` and `text` folders are stored as `.tsv`, and the game can't read TSV.
+They have to be converted to binary tables when the pack is built.
 
-1. Open this folder in RPFM as a PackFile project.
-2. Save/export a `.pack` file into your game's `data/` folder.
-3. Enable it in the in-game mod manager alongside MCT.
+- **Don't** use RPFM's plain "Add Folder" on this repo. It copies the `.tsv`
+  files in unconverted. The pack will load, but none of the DB tables or text
+  will, and the mod does nothing.
+- **Do** build it through RPFM's MyMod feature. Put this repo in your MyMods
+  folder, open it as a MyMod, and use MyMod → Import. That converts the TSVs to
+  binary. `settings.rpfm_reserved.json` sets which files the import skips.
+- **Quick test when only Lua changed:** open the released `.pack` in RPFM,
+  replace the changed `script/` file(s), and save it as a new pack.
+
+To test, save the pack into the game's `data/` folder, disable the Workshop
+version of TTC, and enable the local pack in the mod manager. TTC runs in
+campaigns only. Custom Battle is never capped.
 
 ## Version history
 
