@@ -1282,7 +1282,9 @@ local subculture_defaults = {
     ["wh3_main_sc_tze_tzeentch"] = {"wh3_main_tze_inf_pink_horrors_0", "wh3_main_tze_inf_blue_horrors_0"},
     ["wh3_main_sc_dae_daemons"] = {"wh3_main_kho_inf_bloodletters_0","wh3_main_nur_inf_nurglings_0", "wh3_main_sla_inf_daemonette_0", "wh3_main_tze_inf_pink_horrors_0", "wh3_main_tze_inf_blue_horrors_0"},
     --wh3 DLC
-    ["wh3_dlc23_sc_chd_chaos_dwarfs"] = {"wh3_dlc23_chd_inf_chaos_dwarf_warriors", "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons", "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses", "wh3_dlc23_chd_inf_hobgoblin_cutthroats"}
+    ["wh3_dlc23_sc_chd_chaos_dwarfs"] = {"wh3_dlc23_chd_inf_chaos_dwarf_warriors", "wh3_dlc23_chd_inf_chaos_dwarf_warriors_great_weapons", "wh3_dlc23_chd_inf_chaos_dwarf_blunderbusses", "wh3_dlc23_chd_inf_hobgoblin_cutthroats"},
+    -- Host of Nagash draws from the shared Vampire Counts / Tomb Kings / Skaven pools rather than having exclusive units.
+    ["wh3_dlc29_sc_nag_undead_legions"] = {"wh_main_vmp_inf_skeleton_warriors_0", "wh_main_vmp_inf_skeleton_warriors_1", "wh_main_vmp_inf_zombie", "wh2_dlc09_tmb_inf_skeleton_warriors_0", "wh2_dlc09_tmb_inf_nehekhara_warriors_0", "wh2_main_skv_inf_clanrats_1"}
 } --:map<string, vector<string>>
 
 local chorfs_dlc_units = {
@@ -1604,6 +1606,79 @@ local dlc_27_units = {
     {"wh3_dlc27_sla_mon_keeper_of_secrets_dechala", "rare", 3},
 }
 
+local dlc_29_units = {
+    -- vampire counts (Nagash / Host of Nagash roster)
+    {"wh3_dlc29_vmp_mon_morghast_archai", "special", 2},
+    {"wh3_dlc29_vmp_mon_morghast_archai_ror", "special", 2},
+    {"wh3_dlc29_vmp_mon_morghast_harbingers", "special", 2},
+    {"wh3_dlc29_vmp_mon_zombie_dragon", "rare", 1},
+    {"wh3_dlc29_vmp_veh_coven_throne", "rare", 1},
+    {"wh3_dlc29_vmp_inf_grave_guard_0_the_awakening", "special", 1},
+    {"wh3_dlc29_vmp_inf_grave_guard_1_the_awakening", "special", 1},
+    {"wh3_dlc29_vmp_inf_grave_guard_2_the_awakening", "special", 1},
+    {"wh3_dlc29_vmp_inf_lahmian_handmaidens_death", "special", 2},
+    {"wh3_dlc29_vmp_inf_lahmian_handmaidens_shadow", "special", 2},
+    {"wh3_dlc29_vmp_cav_drakenhof_templars", "special", 2},
+    {"wh3_dlc29_vmp_inf_skeleton_warriors_0_raise_legion", "core"},
+    {"wh3_dlc29_vmp_inf_skeleton_warriors_0_raise_legion_upgraded", "core"},
+    {"wh3_dlc29_vmp_inf_skeleton_warriors_0_the_awakening", "core"},
+    {"wh3_dlc29_vmp_inf_zombies_raise_legion", "core"},
+    {"wh3_dlc29_vmp_inf_spirit_host", "special", 3},
+
+    -- tomb kings (Arkhan roster)
+    {"wh3_dlc29_tmb_mon_khemric_titan", "rare", 1},
+    {"wh3_dlc29_tmb_mon_khemric_titan_ror", "rare", 1},
+    {"wh3_dlc29_tmb_mon_ushabti_ror_sepulchrex", "special", 2},
+
+    -- skaven (Thanquol / Skreech Verminking roster)
+    {"wh3_dlc29_skv_mon_stormfiend_doomflayer_gauntlets", "rare", 2},
+    {"wh3_dlc29_skv_mon_stormfiend_grinderfists", "rare", 2},
+    {"wh3_dlc29_skv_mon_stormfiend_ratling_cannons", "rare", 2},
+    {"wh3_dlc29_skv_mon_stormfiend_shock_gauntlets", "rare", 2},
+    {"wh3_dlc29_skv_mon_stormfiend_warpfire_projectors", "rare", 2},
+    {"wh3_dlc29_skv_mon_stormfiend_windlaunchers", "rare", 2},
+    {"wh3_dlc29_skv_mon_stormfiends_ratling_cannons_ror", "rare", 2},
+    {"wh3_dlc29_skv_art_warp_doom_magma_cannon", "rare", 2},
+    {"wh3_dlc29_skv_art_plagueclaw_catapult_ror", "rare", 1},
+    {"wh3_dlc29_skv_veh_cauldron_of_a_thousand_poxes", "rare", 1},
+    {"wh3_dlc29_skv_inf_deathvermin_ror", "special", 1},
+    {"wh3_dlc29_skv_inf_pusbags", "special", 2},
+    {"wh3_dlc29_skv_inf_clanrat_spearmen_vermintide", "core"},
+    {"wh3_dlc29_skv_inf_clanrats_vermintide", "core"},
+    {"wh3_dlc29_skv_inf_skavenslave_slingers_vermintide", "core"},
+    {"wh3_dlc29_skv_inf_skavenslave_spearmen_vermintide", "core"},
+    {"wh3_dlc29_skv_inf_skavenslaves_vermintide", "core"},
+
+    -- warriors of chaos / nurgle (The Glottkin roster)
+    {"wh3_dlc29_chs_inf_putrid_blightkings_axe_shield", "special", 2},
+    {"wh3_dlc29_chs_inf_putrid_blightkings_dual_axe", "special", 2},
+    {"wh3_dlc29_chs_inf_putrid_blightkings_dual_axe_ror", "special", 2},
+    {"wh3_dlc29_chs_inf_putrid_blightkings_great_weapons", "special", 2},
+    {"wh3_dlc29_chs_inf_chosen_mnur_ror", "special", 2},
+    {"wh3_dlc29_chs_inf_flayerkin", "core"},
+    {"wh3_dlc29_chs_mon_chaos_siege_giant", "rare", 1},
+    {"wh3_dlc29_chs_mon_basilisk", "rare", 2},
+    {"wh3_dlc29_chs_mon_giant_spined_chaos_beast", "rare", 2},
+    {"wh3_dlc29_chs_mon_giant_spined_chaos_beast_ror", "rare", 2},
+
+    -- beastmen (Basilisk / Giant Spined Chaos Beast share the same unit design as chaos above)
+    {"wh3_dlc29_bst_mon_basilisk", "rare", 2},
+    {"wh3_dlc29_bst_mon_giant_spined_chaos_beast", "rare", 2},
+    {"wh3_dlc29_bst_mon_giant_spined_chaos_beast_ror", "rare", 2},
+
+    -- empire (Boris Todbringer / Cult of Ulric roster)
+    {"wh3_dlc29_emp_inf_teutogen_guard", "special", 2},
+    {"wh3_dlc29_emp_inf_teutogen_guard_ror", "special", 2},
+    {"wh3_dlc29_emp_cav_knights_of_the_white_wolf", "special", 2},
+    {"wh3_dlc29_emp_cav_knights_of_the_white_wolf_ror", "special", 2},
+    {"wh3_dlc29_emp_cav_knights_panther", "special", 2},
+    {"wh3_dlc29_emp_veh_celestial_hurricanum_0", "rare", 1},
+    {"wh3_dlc29_emp_inf_warriors_of_ulric", "core"},
+    {"wh3_dlc29_emp_inf_wolf_kin", "core"},
+    {"wh3_dlc29_emp_inf_hunting_hounds", "core"},
+    {"wh3_dlc29_emp_inf_hunting_hounds_ror", "core"},
+}
+
 local errata = {
     -- Missing vanilla units
     {"wh3_main_ogr_inf_gnoblars_flingers", "core"},
@@ -1647,6 +1722,7 @@ ttc.add_setup_callback(function()
     ttc.add_unit_list(dlc_25_units, true)
     ttc.add_unit_list(dlc_26_units, true)
     ttc.add_unit_list(dlc_27_units, true)
+    ttc.add_unit_list(dlc_29_units, true)
     ttc.add_unit_list(errata, true)
 
 
