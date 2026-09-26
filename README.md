@@ -48,7 +48,7 @@ campaigns only. Custom Battle is never capped.
 ## Version history
 
 ### 1.1.0 — Lords of the End Times support, missing units sweep
-- Added unit caps for the ~60 new recruitable units introduced by the *Lord of
+- Added unit caps for the ~60 new recruitable units introduced by the *Lords of
   the End Times* DLC (`wh3_dlc29`) across Vampire Counts, Tomb Kings, Skaven,
   Warriors of Chaos, Chaos Dwarfs, Beastmen, and Empire.
 - Registered the new `Host of Nagash` (Undead Legions) subculture, with a
