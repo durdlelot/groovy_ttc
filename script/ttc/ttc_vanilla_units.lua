@@ -1659,7 +1659,7 @@ local dlc_29_units = {
     {"wh3_dlc29_vmp_inf_skeleton_warriors_0_raise_legion_upgraded", "core"},
     {"wh3_dlc29_vmp_inf_skeleton_warriors_0_the_awakening", "core"},
     {"wh3_dlc29_vmp_inf_zombies_raise_legion", "core"},
-    {"wh3_dlc29_vmp_inf_spirit_host", "special", 1},
+    {"wh3_dlc29_vmp_inf_spirit_host", "core"},
 
     -- tomb kings (Arkhan roster)
     {"wh3_dlc29_tmb_mon_khemric_titan", "rare", 3},
@@ -1735,7 +1735,7 @@ local errata = {
     {"wh2_main_lzd_inf_skink_cohort_1_blessed", "core"},
     {"wh2_main_lzd_mon_ancient_stegadon_blessed", "rare", 3},
     {"wh2_dlc09_tmb_inf_cairn_wraiths", "rare", 1},
-    {"wh2_dlc09_tmb_inf_spirit_host", "special", 1},
+    {"wh2_dlc09_tmb_inf_spirit_host", "core"},
     {"wh2_dlc09_tmb_mon_crypt_horrors", "special", 2},
     {"wh2_dlc09_tmb_mon_morghast_archai", "special", 3},
     {"wh2_dlc09_tmb_mon_morghast_harbingers", "special", 3},
